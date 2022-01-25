@@ -1,0 +1,43 @@
+Git init
+Para começar um projeto que ainda não seja um repositório, o Git Init costuma ser o primeiro comando que você vai usar.
+
+Git clone
+O Git clone é um comando para baixar o código-fonte existente de um repositório remoto (como o Github, por exemplo).
+
+Existem algumas maneiras de baixar o código-fonte, mas eu prefiro o clone com o modo https:
+
+git clone <https://url-do-link>
+
+Git branch
+Com branches (ou ramificações), vários desenvolvedores podem trabalhar paralelamente no mesmo projeto. Assim, cada um pode codar a sua parte sem se atrapalharem.
+
+Por isso, esse é um dos comandos Git mais importantes. Pode-se usar o comando git branch para criar, listar e excluir branches.
+
+Criando uma nova branch:
+
+git branch <nome-da-branch>
+
+Git status
+O comando status do Git fornece algumas informações sobre a branch em que você estiver no momento, como seu nome, se ela está atualizada em relação à master e quais arquivos foram alterados.
+
+git status
+
+Git add
+Quando criamos, modificamos ou excluímos um arquivo, essas alterações ocorrerão em nosso ambiente local e não serão incluídas no próximo commit (a menos que alteremos as configurações).
+
+Precisamos usar o comando git add para incluir as alterações de um arquivo em nosso próximo commit.
+
+Para adicionar apenas um arquivo:
+
+git add <arquivo>
+
+Git commit
+Este comando é como definir um ponto de verificação no processo de desenvolvimento, para o qual você pode voltar mais tarde, se necessário.
+
+git commit -m "mensagem explicando a mudança no código"
+Git push
+Após confirmar as alterações, a próxima coisa que você deseja fazer é enviar as alterações para o servidor remoto.
+
+O comando git push envia e salva suas confirmações no repositório remoto.
+
+git push <remote> <nome-do-branch>
